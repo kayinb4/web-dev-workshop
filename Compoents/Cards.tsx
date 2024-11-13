@@ -21,11 +21,14 @@ export default function Cards() {
     ]
 
     return (
-        <div className="grid grid-cols-3 gap-x-4">
+        <div className="flex items-center w-fit mx-auto gap-3 mt-20">
             {
               cards.map((card, index) => {
                 return(
-                    <div className="border-4 border-black p-3 mt-20">
+                    <div className="border-4 border-black p-3 border border-black mt-20" style={{
+                        margin: "30px",
+                        padding: "5px"
+                    }}>
                         <h3 className="text-xl font-bold w-fit mx-auto">{card.title}</h3>
                         {
                             <div className="w-fit mx-auto my-5">
